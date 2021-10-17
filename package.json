@@ -1,0 +1,27 @@
+{
+  "name": "dssd-estampillado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzorepetto/dssd-estampillado.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorenzorepetto/dssd-estampillado/issues"
+  },
+  "homepage": "https://github.com/lorenzorepetto/dssd-estampillado#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "object-hash": "^2.2.0",
+    "serve-index": "^1.9.1"
+  }
+}
