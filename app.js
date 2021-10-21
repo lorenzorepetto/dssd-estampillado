@@ -3,6 +3,7 @@
 // =================================================================
 var express = require('express');
 var bodyParser = require('body-parser');
+var PORT = require('./config').PORT;
 
 
 // =================================================================
@@ -34,6 +35,6 @@ app.use('/', routes);
 // =================================================================
 //                          Listen
 // =================================================================
-app.listen(3000, () => {
-  console.log('Express Server - Port 3000: \x1b[32m%s\x1b[0m', 'ONLINE');
+app.listen(PORT, () => {
+  console.log('Express Server - Port ' + PORT + ': \x1b[32m%s\x1b[0m', 'ONLINE');
 });

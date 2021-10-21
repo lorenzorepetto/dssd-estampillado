@@ -26,3 +26,18 @@ exports.verifyToken = function(req, res, next) {
         next();
     });
 }
+
+// =================================================================
+//                    Validate params
+// =================================================================
+exports.validateParams = function(req, res, next) {
+
+    var data = req.data;
+    if (!data.expediente || !data.username || !data.password) {
+        return res.status(400).json({
+            ok: false,
+            message: 'Invalid body'
+        })
+    };
+    next();
+}
